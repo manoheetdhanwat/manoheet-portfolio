@@ -2,7 +2,6 @@ import { lazy, PropsWithChildren, Suspense, useEffect, useState } from "react";
 import About from "./About";
 import Career from "./Career";
 import Contact from "./Contact";
-import Cursor from "./Cursor";
 import Landing from "./Landing";
 import Navbar from "./Navbar";
 import SocialIcons from "./SocialIcons";
@@ -29,28 +28,31 @@ const MainContainer = ({ children }: PropsWithChildren) => {
     };
   }, [isDesktopView]);
 
+  useEffect(() => {
+    import("./utils/initialFX").then((module) => {
+      setTimeout(() => {
+        if (module.initialFX) module.initialFX();
+      }, 100);
+    });
+  }, []);
+
   return (
     <div className="container-main">
-      <Cursor />
       <Navbar />
       <SocialIcons />
       {isDesktopView && children}
-      <div id="smooth-wrapper">
-        <div id="smooth-content">
-          <div className="container-main">
-            <Landing>{!isDesktopView && children}</Landing>
-            <About />
-            <WhatIDo />
-            <Career />
-            <Work />
-            {isDesktopView && (
-              <Suspense fallback={<div>Loading....</div>}>
-                <TechStack />
-              </Suspense>
-            )}
-            <Contact />
-          </div>
-        </div>
+      <div className="container-main">
+        <Landing>{!isDesktopView && children}</Landing>
+        <About />
+        <WhatIDo />
+        <Career />
+        <Work />
+        {isDesktopView && (
+          <Suspense fallback={<div>Loading....</div>}>
+            <TechStack />
+          </Suspense>
+        )}
+        <Contact />
       </div>
     </div>
   );

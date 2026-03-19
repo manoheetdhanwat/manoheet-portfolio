@@ -12,46 +12,80 @@ const Career = () => {
           <div className="career-timeline">
             <div className="career-dot"></div>
           </div>
+          {/* Experience */}
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Full Stack Developer</h4>
-                <h5>Ikshan</h5>
+                <h4>Artificial Intelligence Intern</h4>
+                <h5>EdiGlobe, Bengaluru</h5>
               </div>
-              <h3>2020</h3>
+              <h3>2025</h3>
             </div>
             <p>
-              Built 6+ complete applications using React.js. Integrated backend
-              authentication using Node.js & MongoDB. Created responsive UI/UX
-              and designed wireframes using Figma.
+              Completed 10+ AI/ML tasks spanning data classification, pattern recognition, and intelligent automation. 
+              Demonstrated strong analytical thinking and communication within an agile team.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Senior Full Stack Developer</h4>
-                <h5>Monocept (Max Life Insurance)</h5>
+                <h4>Data-Driven Content Editor</h4>
+                <h5>Retrix.in, Remote</h5>
               </div>
-              <h3>2021</h3>
+              <h3>2024</h3>
             </div>
             <p>
-              Led two development teams on Mpro, a large-scale insurance
-              operations platform. Developed multiple modules using React.js &
-              migrated critical functionalities to Node.js microservices.
+              Produced 50+ analytics-backed content pieces; deployed AI writing and data tools to cut production time by 30% and measurably improve engagement metrics.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Full Stack Developer</h4>
-                <h5>Logic Loop</h5>
+                <h4>AI/ML Intern</h4>
+                <h5>Startech Infotech, Nashik</h5>
               </div>
-              <h3>NOW</h3>
+              <h3>2024</h3>
             </div>
             <p>
-              Building Solid, a proprietary low-code platform using Angular,
-              Next.js & NestJS. Delivering production-ready CMS-based projects
-              including e-commerce, CRM, and import-export automation systems.
+              Engineered 15+ structured chatbot response flows using rule-based AI and NLP; delivered all ML assignments on time with 100% completion rate.
+            </p>
+          </div>
+          <div className="career-info-box">
+            <div className="career-info-in">
+              <div className="career-role">
+                <h4>Full-Stack Web Dev Trainee</h4>
+                <h5>Calibers-InfoTech, Nashik</h5>
+              </div>
+              <h3>2022</h3>
+            </div>
+            <p>
+              Built 3 dynamic web applications in HTML, CSS, PHP, and MySQL; earned MSBTE-recognized certification in full-stack development fundamentals.
+            </p>
+          </div>
+
+          {/* Education */}
+          <div className="career-info-box">
+            <div className="career-info-in">
+              <div className="career-role">
+                <h4>B.Tech – AI & Machine Learning</h4>
+                <h5>Sandip University, Nashik</h5>
+              </div>
+              <h3>2026</h3>
+            </div>
+            <p>
+              Expected graduation in May 2026. Consistent focus on core Data Science, Machine Learning, and Software Engineering.
+            </p>
+          </div>
+          <div className="career-info-box">
+            <div className="career-info-in">
+              <div className="career-role">
+                <h4>Diploma – Computer Science</h4>
+                <h5>MET League of Colleges, Mumbai</h5>
+              </div>
+              <h3>2023</h3>
+            </div>
+            <p>
+              Built strong fundamentals in programming, database management, and system architecture.
             </p>
           </div>
         </div>
